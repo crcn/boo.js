@@ -1,0 +1,18 @@
+{
+  "name": "boojs",
+  "version": "0.0.1",
+  "description": "boo.js ======",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classdojo/boo.js.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/classdojo/boo.js/issues"
+  }
+}
