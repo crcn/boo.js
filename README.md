@@ -14,4 +14,8 @@ boo.interval(function () {
 boo.run(function () {
   
 });
+
+
+// trigger wait for 1 second
+boo.wait();
 ```
