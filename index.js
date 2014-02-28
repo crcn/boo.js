@@ -102,7 +102,10 @@
         mousedown(boo.wait).
 
         // wait if the user is interacting with the page
-        mousemove(boo.wait);
+        mousemove(boo.wait).
+
+        // run when the user's mouse leaves the stage
+        mouseleave(boo.unwait);
     });
   }
 
