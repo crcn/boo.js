@@ -7,11 +7,14 @@
 
   function _interval (fn, ms) {
 
-    var timeout;
+    var timeout, disposed;
 
     function tick () {
       timeout = setTimeout(function () {
         _run(function () {
+
+          if (disposed) return;
+
           fn();
           tick();
         })
@@ -22,6 +25,7 @@
 
     return {
       dispose: function () {
+        disposed = true;
         if(timeout) {
           clearTimeout(timeout);
         }
