@@ -85,7 +85,7 @@
   };
 
   if (typeof process !== "undefined") {
-    module.exports == boo;
+    module.exports = boo;
   }
 
   if (typeof window !== "undefined") {
