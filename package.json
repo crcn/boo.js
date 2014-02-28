@@ -14,5 +14,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/classdojo/boo.js/issues"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.16.2"
   }
 }
