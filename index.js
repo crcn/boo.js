@@ -67,11 +67,20 @@
   /**
    */
 
+  function _unwait () {
+    if (_timeout) clearTimeout(_timeout);
+    _runQueue();
+  }
+
+  /**
+   */
+
 
   var boo = {
     interval    : _interval,
     run         : _run,
     wait        : _wait,
+    unwait      : _unwait,
     waitTimeout : 1000
   };
 
