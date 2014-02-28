@@ -1,8 +1,8 @@
 {
   "name": "boojs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "boo.js ======",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
