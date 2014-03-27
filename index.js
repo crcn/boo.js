@@ -1,6 +1,6 @@
 (function () {
 
-  var _queue = [], _timeout, _waiting = false;
+  var _queue = [], _timeout, _waiting = false, _running = false;
 
   /**
    */
@@ -49,12 +49,17 @@
 
   function _runQueue () {
 
+    if (_running) return;
+    _running = true;
+
     _waiting = false;
     _timeout = undefined;
 
     for (var i = 0; i < _queue.length; i++) {
       _queue[i]();
     }
+
+    _running = false;
 
     _queue = [];
   }
