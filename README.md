@@ -1,4 +1,4 @@
-Boo.js is a library that runs a function when a user is inactive. This library was created to execute CPU intensive tasks that run only when the user is inactive. 
+Boo.js is a library that runs a function when a user is inactive. This library was created to execute CPU intensive tasks that only run when the user is inactive. 
 
 Example: http://jsfiddle.net/G56uE/5/
 
