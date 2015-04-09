@@ -21,3 +21,19 @@ boo.run(function () {
 // trigger wait for 1 second
 boo.wait();
 ```
+
+#### boo.interval(fn, ms)
+
+runs a function every `ms` the user is inactive.
+
+#### boo.wait()
+
+resets the timer for executing functions.
+
+#### boo.waitTimeout
+
+wait timeout before running tasks. Default is `1000` ms.
+
+#### boo.run(fn) 
+
+task to run only when the user is inactive. This gets fired immediately if there's no user activity.
